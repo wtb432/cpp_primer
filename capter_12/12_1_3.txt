@@ -1,3 +1,7 @@
 you can certainly do this ,because the const just limit the StrBlob object ,it means the data is a
 *const pointer,and this is a top_level const ,this means that where the pointer points to can change
-But I didn't suggest this way,because pop_back and push_back will change the empty() and size() 
+But I didn't suggest this way,because pop_back and push_back will change the empty() and size()
+
+http://stackoverflow.com/questions/20725190/operating-on-dynamic-memory-is-it-meaningful-to-overload-a-const-memeber-functi
+
+http://www.douban.com/group/topic/61573279/ 

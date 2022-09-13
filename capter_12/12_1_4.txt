@@ -1,0 +1,1 @@
+Because i is std::vector<std::string>::size_type which is unsigned and data->size() is greater than zero

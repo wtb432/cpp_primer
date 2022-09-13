@@ -1,0 +1,8 @@
+Advantage:
+	1.easy to construct and use.
+
+	2.we can realize clearly which class we ha	ve used .
+
+shortcoming:
+	1.we always uses the construct a temporary	 StrBlob object.
+
