@@ -1,0 +1,3 @@
+p point to a int is 4 bytes and bool is 1 byte ,so it means that 
+dynamic memory allocated has no chance to be freed,memory leakage
+will occur.

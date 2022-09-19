@@ -1,2 +1,0 @@
-b1 contains 4 elements
-b2 contains 0 element  

@@ -1,0 +1,5 @@
+1.unsafe,r point to q,and the original r point address will lose,so memory
+leakage will occur.
+2.safe,r2 point to q2,the reference count belongs to r2 reduce to 0 and
+the reference belongs to q2 increase to 2,the memory allocated to r2
+will be released.
