@@ -1,6 +1,11 @@
 (a) error,ix is not a address
-(b) right
+
+(b) unrecommend,the code can compile,but will cause error at run time,because when p1 is out of scope,delete will be called to free the object.But the object is not allocate using new.Thus,an error would be thrown by operating system.
+
 (c) right
+
 (d) right
+
 (e) right
+
 (f) illegal,unique_ptr can't has two refference
