@@ -1,0 +1,6 @@
+(a) error,ix is not a address
+(b) right
+(c) right
+(d) right
+(e) right
+(f) illegal,unique_ptr can't has two refference
