@@ -1,0 +1,1 @@
+0 is type of int and double will be convert to int.

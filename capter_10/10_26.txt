@@ -1,0 +1,3 @@
+back_inserter use push_back.
+front_inserter use push_front.
+insert uses insert.

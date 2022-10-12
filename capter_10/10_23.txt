@@ -1,0 +1,1 @@
+assuming the function to be bound have n parameters,bind take n+1 parameters.the additional one is for the functon to be bound itself
