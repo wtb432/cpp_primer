@@ -1,0 +1,4 @@
+replace(beg,end,old_val,new_val) : replace old_val to new_val in [beg,end)
+replace_if(beg,end,pred,new_val) : replace the val that make pred return not equals 0 to new_val
+replace_copy(beg,end,dest,old_val,new_val) : copy the input_range that old_elements has been replaced  to new_elements  into dest
+replace_copy_if(beg,end,dest,pred,new_val) : copy the input_range that old_elements which pred  is true has been replaced to new_elements  into dest

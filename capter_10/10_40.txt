@@ -1,0 +1,3 @@
+copy : first and second are input iterators,last is output iterators
+reverse : bidirectional iterators
+unique : forward iterators
