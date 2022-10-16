@@ -1,0 +1,6 @@
+(1) legal
+(2) illegal ,multiset don't have push_back
+(3) legal
+(4) legal
+ 
+
