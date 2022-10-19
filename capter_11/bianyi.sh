@@ -1,2 +1,4 @@
-read file
-g++ ${file}.cpp -o ./output/${file}
+files=$(ls)
+for filename in $files
+do
+
