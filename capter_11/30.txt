@@ -1,0 +1,3 @@
+pos is a pair<multiset<string,string>::iterator,multiset<string,string>::iteator>
+pos.first is a multiset<string,string>::iterator
+pos.first->second is a string
