@@ -1,0 +1,1 @@
+element in vector can repeated , so set is better
