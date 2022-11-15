@@ -1,4 +1,12 @@
-#include "13_39.h"
+#include "13_40.h"
+
+std::allocator<std::string> StrVec::alloc;
+StrVec::StrVec(std::initializer_list<std::string> li)
+{
+    auto data = alloc.allocate(li.size());
+    elements = data;
+    first_free = cap = std::uninitialized_copy(li.begin(), li.end(), data);
+}
 void StrVec::push_back(const std::string &s)
 {
     chk_n_alloc();
@@ -65,22 +73,23 @@ void StrVec::reserver(std::size_t new_cap)
         return;
     alloc_n_move(new_cap);
 }
-
 void StrVec::resize(std::size_t new_size)
 {
-    if (size() > new_size)
+    resize(new_size, std::string());
+}
+
+void StrVec::resize(std::size_t new_size, const std::string &s)
+{
+    if (new_size > size())
     {
         if (new_size > capacity())
             reserver(new_size * 2);
         for (std::size_t i = size(); i != new_size; i++)
-            alloc.construct(first_free++);
+            alloc.construct(first_free++, s);
     }
-    else
+    else if (new_size < size())
     {
-        auto q = first_free;
-        auto p = new_size - size();
-        while (p--)
-            alloc.construct(q++);
-        first_free = q;
+        while (first_free != elements + new_size)
+            alloc.destroy(--first_free);
     }
 }

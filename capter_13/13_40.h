@@ -1,13 +1,15 @@
-#ifndef _CP5_13_39_h_
-#define _CP5_13_39_h_
+#ifndef _CP5_13_40_h_
+#define _CP5_13_40_h_
 #include <string>
 #include <memory>
 #include <utility>
+#include <initializer_list>
 class StrVec
 {
 public:
     StrVec() : elements(nullptr), first_free(nullptr), cap(nullptr) {}
     StrVec(const StrVec &);
+    StrVec(std::initializer_list<std::string> li);
     StrVec &operator=(const StrVec &);
     ~StrVec();
     void push_back(const std::string &);
@@ -29,6 +31,7 @@ private:
     void alloc_n_move(std::size_t new_cap);
     void free();
     void reallocate();
+    void resize(std::size_t, const std::string &);
     std::string *elements;
     std::string *first_free;
     std::string *cap;
